@@ -1,0 +1,44 @@
+{% load static %}
+<html>
+    <head>
+        <title>Profile</title>
+    </head>
+    <body>
+        <div>
+            <nav class="menu">
+                <ul>
+                    <li><a href = "{% url 'midterm' %}">About me</a></li>
+                    <li><a href = "{% url 'like' %}">Like</a></li>
+                    <li><a href = "{% url 'contact'%}">Contact</a></li>
+                    <li><a href = "{% url 'main'%}">Final-Term Site</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section>
+            <div class="contact">
+                <span>
+                    <a href="https://github.com/psy337337/">
+                        Github
+                    </a>
+                </span>
+                <span>
+                    <a href="https://www.instagram.com/p.seo0_/">
+                        Instagram
+                    </a>
+                </span>
+                <span>
+                    <a href="https://blog.naver.com/psy337337">
+                        Blog
+                    </a>
+                </span>
+            </div>
+        </section>
+        <footer>
+            <em>OpenSW Mid-Term-Project</em>
+            <p>call : 010-2362-5174</p>
+            <p>e-mail : psy337337@naver.com</p>
+        </footer>
+       
+    </body>
+    <link rel="stylesheet" type="text/css" href = "{% static 'css/contact.css'%}">
+</html>

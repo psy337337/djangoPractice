@@ -1,0 +1,53 @@
+{% load static %}
+<html>
+    <head>
+        <title>Profile</title>
+    </head>
+    <body>
+        <div>
+            <nav class="menu">
+                <ul>
+                    <li><a href = "{% url 'midterm' %}">About me</a></li>
+                    <li><a href = "{% url 'like' %}">Like</a></li>
+                    <li><a href = "{% url 'contact'%}">Contact</a></li>
+                    <li><a href = "{% url 'main'%}">Final-Term Site</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <section>
+            <div class = "profile">
+                <h1>Profile</h1>
+                <div style="float:left; margin-right:20px;">
+                    <a href="https://www.dankook.ac.kr/web/kor">
+                        <img wigth = "240px" height="300px" src="https://play-lh.googleusercontent.com/vvR0w2MhaXWZZCn8frTJpRaaU7isvwaDNxuoHDmR2geFda5shUe3feZwuxEMMQyNWgo">
+                        
+                    </a>
+                </div>
+                <div class ="Info">
+                    <p class="name">박서영</p>
+                    <p class="name_en">PARK SEOYEONG<p>
+                    <dl class="pf_dl">
+                        <dt>출생</dt>
+                        <dd>2000.11.21</dd>
+                        <dt>소속</dt>
+                        <dd>단국대 컴퓨터공학과</dd>
+                        <dt>거주지</dt>
+                        <dd>경기도 하남시</dd>
+                        <dt>MBTI</dt>
+                        <dd>ISTP</dd>
+
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <em>OpenSW Mid-Term-Project</em>
+            <p>call : 010-2362-5174</p>
+            <p>e-mail : psy337337@naver.com</p>
+        </footer>
+        
+    </body>
+    <link rel="stylesheet" type="text/css" href = "{% static 'css/profile.css'%}">
+
+</html>

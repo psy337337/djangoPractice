@@ -13,3 +13,12 @@ def apink(request):
 
 def lostark(request):
     return render(request,'siteApp/lostark.html')
+
+
+
+def profile(request):
+    return render(request,'siteApp/profile.html')
+def like(request):
+    return render(request,'siteApp/like.html')
+def contact(request):
+    return render(request,'siteApp/contact.html')
