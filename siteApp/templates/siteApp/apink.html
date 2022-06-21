@@ -1,0 +1,49 @@
+{% load static %}
+<html>
+    <head>
+        <title>Apink</title>
+    </head>
+    <body>
+        <div>
+            <nav class="menu">
+                <ul>
+                    <li><a href = "{% url 'seventeen' %}">Seventeen</a></li>
+                    <li><a href = "{% url 'apink' %}">Apink</a></li>
+                    <li><a href = "{% url 'lostark'%}">Lostark</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <section>
+            <div class = "title">
+                <h1>Info</h1>
+                <div style="float:left; margin-right:20px;">
+                    <a href="">
+                        <img wigth = "240px" height="300px" src="{% static 'image/apink.jpeg'%}">
+                    </a>
+                </div>
+                <div class ="Info">
+                    <p class="name">에이핑크</p>
+                    <p class="name_en">Apink<p>
+                    <dl class="pf_dl">
+                        <dt>데뷔</dt>
+                        <dd>2011.4.19</dd>
+                        <dt>소속사</dt>
+                        <dd>IST</dd>
+                        <dt>팬덤명</dt>
+                        <dd>Panda</dd>
+
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <em>OpenSW Final-Term-Project</em>
+            <p>call : 010-2362-5174</p>
+            <p>e-mail : psy337337@naver.com</p>
+        </footer>
+        
+    </body>
+    <link rel="stylesheet" type="text/css" href = "{% static 'css/info.css'%}">
+
+</html>

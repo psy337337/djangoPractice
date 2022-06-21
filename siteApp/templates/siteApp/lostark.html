@@ -1,0 +1,50 @@
+{% load static %}
+<html>
+    <head>
+        <title>LOSTARK</title>
+    </head>
+    <body>
+        <div>
+            <nav class="menu">
+                <ul>
+                    <li><a href = "{% url 'seventeen' %}">Seventeen</a></li>
+                    <li><a href = "{% url 'apink' %}">Apink</a></li>
+                    <li><a href = "{% url 'lostark'%}">Lostark</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <section>
+            <div class = "title">
+                <h1>Info</h1>
+                <div style="float:left; margin-right:20px;">
+                    <a href="">
+                        <img wigth = "240px" height="300px" src="{% static 'image/lostark.jpg'%}">
+                    </a>
+                </div>
+                <div class ="Info">
+                    <p class="name">로스트 아크</p>
+                    <p class="name_en">LOSTARK<p>
+                    <dl class="pf_dl">
+                        <dt>출시일</dt>
+                        <dd>2019.12.4</dd>
+                        <dt>장르</dt>
+                        <dd>MMORPG</dd>
+                        <dt>개발사</dt>
+                        <dd>스마일게이트 RPG</dd>
+                        
+
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <em>OpenSW Final-Term-Project</em>
+            <p>call : 010-2362-5174</p>
+            <p>e-mail : psy337337@naver.com</p>
+        </footer>
+        
+    </body>
+    <link rel="stylesheet" type="text/css" href = "{% static 'css/info.css'%}">
+
+</html>

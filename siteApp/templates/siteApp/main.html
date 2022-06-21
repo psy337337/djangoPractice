@@ -1,0 +1,50 @@
+{% load static %}
+<html>
+    <head>
+        <title>MY HOME</title>
+    </head>
+    <body>
+        <div>
+            <nav class="menu">
+                <ul>
+                    <li><a href = "{% url 'seventeen' %}">Seventeen</a></li>
+                    <li><a href = "{% url 'apink' %}">Apink</a></li>
+                    <li><a href = "{% url 'lostark'%}">LOSTARK</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section>
+            
+            <div class="content">
+                
+                <div class ="myLike">
+                    <h1 class="item">My Favorite</h1>
+                    <span>
+                        <a href="{% url 'seventeen' %}">
+                            <img src="{% static 'image/seventeen.jpg' %}">
+                            <em>Seventeen</em>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="{% url 'apink' %}">
+                            <img src="{% static 'image/apink.jpeg' %}">
+                            <em>Apink</em>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="{% url 'lostark' %}">
+                            <img src="{% static 'image/lostark.jpg' %}">
+                            <em>LOSTARK</em>
+                        </a>
+                    </span>
+                </div>>
+            </div>
+        </section>
+        <footer>
+            <em>OpenSW Final-Term-Project</em>
+            <p>call : 010-2362-5174</p>
+            <p>e-mail : psy337337@naver.com</p>
+        </footer>
+    </body>
+    <link rel="stylesheet" type="text/css" href = "{% static 'css/main.css'%}">
+</html>
